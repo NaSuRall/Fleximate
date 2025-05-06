@@ -9,7 +9,7 @@ export  default function dashboard(){
             <Navbar/>
 
             {/* Main */}
-            <main className=" grid grid-cols-3 grid-rows-5 gap-5 h-screen w-full p-8 bg-blue-50">
+            <main className=" grid grid-cols-3 grid-rows-5 gap-5 h-screen w-full p-8 bg-blue-50 font-sans">
 
                 {/* CARD Body */}
                 <div className="overflow-hidden border-zinc-200 row-start-1 rounded-4xl row-end-1 col-start-1 col-end-3">
@@ -75,9 +75,17 @@ export  default function dashboard(){
                 </div>
                 <div className="bg-white rounded-4xl p-6  row-start-4 row-end-6 col-start-1 col-end-3">
 
-                    <div className="flex flex-row  justify-between mb-3">
-                        <h2 className="text-xl">Tableau de board - Project</h2>
-                        <a href="#"><i className="fa-solid fa-arrow-up-right-from-square text-xl transition-all text-blue-700 cursor-pointer hover:translate-x-0.5 hover:-translate-y-px"></i></a>
+                    <div className="flex flex-row items-center justify-between mb-3">
+                        <div className=" flex flex-row   w-full h-full">
+                            <h2 className="text-xl">Tableau de board - Project</h2>
+                        </div>
+
+                        <div className="p-2 flex gap-10">
+                            <input type="text" placeholder="Rechercher..."
+                                   className="w-60 pl-10 pr-4 py-2 border border-zinc-50  rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </input>
+                            <a href="#"><i className="fa-solid fa-arrow-up-right-from-square text-xl transition-all text-blue-700 cursor-pointer hover:translate-x-0.5 hover:-translate-y-px"></i></a>
+                        </div>
                     </div>
                             <div className="overflow-x-auto">
                                 <table className="w-full table-auto text-left border-collapse">

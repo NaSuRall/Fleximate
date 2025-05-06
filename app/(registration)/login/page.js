@@ -26,7 +26,7 @@ export default function login(){
             <div className=" rounded-4xl row-start-1  row-end-1 col-start-2 col-end-2 flex flex-col h-full w-full  justify-center items-center gap-10 ">
                 <div className="min-h-screen flex items-center justify-center w-full bg-white px-4">
                     <div className="w-full max-w-sm space-y-6">
-                        <h2 className="text-center text-2xl font-semibold text-gray-900">Sign In to Woorkroom</h2>
+                        <h2 className="text-center text-3xl font-semibold text-gray-900">Sign In to Woorkroom</h2>
 
                         <form className="space-y-4">
 
@@ -54,7 +54,7 @@ export default function login(){
 
                             <div className="flex items-center justify-between text-sm text-gray-500">
                                 <label className="flex items-center gap-2 cursor-pointer">
-                                    <input type="checkbox" className="accent-blue-600 w-4 h-4 rounded border-gray-300"/>
+                                    <input type="checkbox" className="accent-blue-500 w-4 h-4 rounded border-gray-300"/>
                                     Remember me
                                 </label>
                                 <a href="#" className="hover:underline">Forgot Password?</a>
@@ -62,8 +62,8 @@ export default function login(){
 
 
                             <button type="submit"
-                                    className="w-full flex justify-center items-center gap-2 bg-blue-600
-                                    hover:bg-blue-700
+                                    className="w-full flex justify-center items-center gap-2 bg-blue-500
+                                    hover:bg-blue-600
                                     hover:
                                      text-white font-medium py-3 px-6 rounded-xl  transition-all ease-in-out ">
                                 Sign In
@@ -75,7 +75,7 @@ export default function login(){
                         </form>
 
 
-                        <p className="text-center text-sm text-blue-600 hover:underline">
+                        <p className="text-center text-sm text-blue-500 hover:underline">
                             Don’t have an account?
                         </p>
                     </div>
