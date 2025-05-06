@@ -1,4 +1,4 @@
-// components/BarChart.js
+
 'use client';
 
 import { Bar } from 'react-chartjs-2';
@@ -12,7 +12,7 @@ import {
     Legend,
 } from 'chart.js';
 
-// Enregistrer les composants nécessaires de Chart.js
+
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 
@@ -27,7 +27,7 @@ const data = {
     ],
 };
 
-// Options du graphique
+
 const options = {
     responsive: true,
     plugins: {

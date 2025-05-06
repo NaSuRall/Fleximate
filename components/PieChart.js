@@ -30,7 +30,3 @@ const data = {
 export default function PieChart() {
     return <Pie data={data} />;
 }
-
-//<div className="flex justify-around items-center h-96 flex-row w-full">
-   // <PieChart />
-//</div>

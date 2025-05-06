@@ -9,10 +9,10 @@ export  default function dashboard(){
             <Navbar/>
 
             {/* Main */}
-            <main className=" grid grid-cols-5 grid-rows-5 gap-5 h-screen w-full p-4 bg-blue-50">
+            <main className=" grid grid-cols-3 grid-rows-5 gap-5 h-screen w-full p-8 bg-blue-50">
 
                 {/* CARD Body */}
-                <div className="overflow-hidden border-zinc-200 row-start-1 rounded-4xl row-end-1 col-start-2 col-end-5">
+                <div className="overflow-hidden border-zinc-200 row-start-1 rounded-4xl row-end-1 col-start-1 col-end-3">
 
                     <div className="bg-white p-3 flex flex-row items-center justify-center h-full w-full">
 
@@ -55,17 +55,99 @@ export  default function dashboard(){
 
                 </div>
 
-
-                <div className=" bg-white rounded-4xl p-6 row-start-2 row-end-4 col-start-2 col-end-4">
+                <div className=" bg-white rounded-4xl p-6 row-start-2 row-end-4 col-start-1 col-end-2">
+                    <div className="flex flex-row  justify-between ">
+                        <h2 className="text-xl">Visite website</h2>
+                        <a href="#"><i className="fa-solid fa-arrow-up-right-from-square text-xl transition-all text-blue-700 cursor-pointer hover:translate-x-0.5 hover:-translate-y-px"></i></a>
+                    </div>
                     <LineChart />
                 </div>
-                <div className="bg-white rounded-4xl p-6  row-start-2 row-end-4 col-start-4 col-end-5">
-                    <PieChart />
+                <div className="bg-white rounded-4xl p-6  row-start-2 row-end-4 col-start-2 col-end-3 ">
+                    <div className="flex flex-row  justify-between ">
+                        <h2 className="text-xl">Client</h2>
+                        <a href="#"><i className="fa-solid fa-arrow-up-right-from-square text-xl transition-all text-blue-700 cursor-pointer hover:translate-x-0.5 hover:-translate-y-px"></i></a>
+                    </div>
+                    <div className="flex flex-row w-full h-72 ">
+                        <div className=" flex items-center justify-center w-full h-full">
+                            <PieChart />
+                        </div>
+                    </div>
                 </div>
-                <div className="bg-white rounded-4xl p-6  row-start-4 row-end-6 col-start-2 col-end-5"></div>
+                <div className="bg-white rounded-4xl p-6  row-start-4 row-end-6 col-start-1 col-end-3">
 
+                    <div className="flex flex-row  justify-between mb-3">
+                        <h2 className="text-xl">Tableau de board - Project</h2>
+                        <a href="#"><i className="fa-solid fa-arrow-up-right-from-square text-xl transition-all text-blue-700 cursor-pointer hover:translate-x-0.5 hover:-translate-y-px"></i></a>
+                    </div>
+                            <div className="overflow-x-auto">
+                                <table className="w-full table-auto text-left border-collapse">
+                                    <thead>
+                                    <tr className="bg-gray-200 text-gray-700 text-sm uppercase">
+                                        <th className="px-4 py-3 rounded-tl-xl">Projet</th>
+                                        <th className="px-4 py-3">Client</th>
+                                        <th className="px-4 py-3">Statut</th>
+                                        <th className="px-4 py-3">Avancement</th>
+                                        <th className="px-4 py-3 text-right rounded-tr-xl">Actions</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody className="text-gray-600 divide-y divide-gray-200">
+                                    <tr className="hover:bg-gray-50 transition">
+                                        <td className="px-4 py-3 font-medium">Site vitrine</td>
+                                        <td className="px-4 py-3">Entreprise ABC</td>
+                                        <td className="px-4 py-3">
+                                          <span className="inline-block px-2 py-1 text-xs font-semibold text-green-700 bg-green-100 rounded-full">
+                                            Terminé
+                                          </span>
+                                        </td>
+                                        <td className="px-4 py-3">
+                                            <div className="w-full bg-gray-200 h-2 rounded">
+                                                <div className="h-full bg-green-500 rounded" ></div>
+                                            </div>
+                                        </td>
+                                        <td className="px-4 py-3 text-right">
+                                            <button className="text-blue-500 hover:underline text-sm">Détails</button>
+                                        </td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50 transition">
+                                        <td className="px-4 py-3 font-medium">Application mobile</td>
+                                        <td className="px-4 py-3">Start-up X</td>
+                                        <td className="px-4 py-3">
+                                          <span className="inline-block px-2 py-1 text-xs font-semibold text-yellow-700 bg-yellow-100 rounded-full">
+                                            En cours
+                                          </span>
+                                        </td>
+                                        <td className="px-4 py-3">
+                                            <div className="w-full bg-gray-200 h-2 rounded">
+                                                <div className="h-full bg-yellow-400 rounded" ></div>
+                                            </div>
+                                        </td>
+                                        <td className="px-4 py-3 text-right">
+                                            <button className="text-blue-500 hover:underline text-sm">Détails</button>
+                                        </td>
+                                    </tr>
+                                    <tr className="hover:bg-gray-50 transition">
+                                        <td className="px-4 py-3 font-medium">Refonte CRM</td>
+                                        <td className="px-4 py-3">Agence Web</td>
+                                        <td className="px-4 py-3">
+                                          <span className="inline-block px-2 py-1 text-xs font-semibold text-red-700 bg-red-100 rounded-full">
+                                            En attente
+                                          </span>
+                                        </td>
+                                        <td className="px-4 py-3">
+                                            <div className="w-full bg-gray-200 h-2 rounded">
+                                                <div className="h-full bg-red-400 rounded" ></div>
+                                            </div>
+                                        </td>
+                                        <td className="px-4 py-3 text-right">
+                                            <button className="text-blue-500 hover:underline text-sm">Détails</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
 
-
+                <div className="bg-white rounded-4xl p-6  row-start-1 row-end-6 col-start-3 col-end-3"></div>
             </main>
         </div>
     )
