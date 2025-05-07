@@ -3,13 +3,13 @@ import Image from "next/image";
 export default function login(){
     return (
 
-        <div className="grid grid-cols-2 grid-rows-1 gap-5 h-screen w-full p-8">
+        <div className="grid grid-cols-2 grid-rows-1 gap-5 h-screen w-full p-8 bg-white ">
 
 
             <div className=" rounded-bl-4xl rounded-tl-4xl row-start-1  row-end-1 col-start-1 col-end-1 flex flex-col h-full w-full bg-blue-500 justify-around items-center ">
                 <div className=" flex flex-col w-full justify-center gap-5 pl-40 ">
-                    <h1 className="text-6xl text-start">Fleximate</h1>
-                    <p className="text-5xl text-white">Your place to work <br/> Plan. Create. Control.</p>
+                    <h1 className="text-7xl text-start text-white">Fleximate</h1>
+                    <p className="text-5xl text-white font-bold">Your place to work <br/> Plan. Create. Control.</p>
                 </div>
 
                 <div className="flex flex-col items-center justify-center ">
