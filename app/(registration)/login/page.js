@@ -64,7 +64,7 @@ export default function login(){
                             <button type="submit"
                                     className="w-full flex justify-center items-center gap-2 bg-blue-500
                                     hover:bg-blue-600
-                                    hover:
+                                    hover:justify-between
                                      text-white font-medium py-3 px-6 rounded-xl  transition-all ease-in-out ">
                                 Sign In
                                 <div>

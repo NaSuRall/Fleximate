@@ -65,13 +65,7 @@ export default function Navbar(){
                  <p className="text-white">Passez a PRO pour accéder a toutes les fonctionnalités</p>
                  <button className="p-8 py-2 shadow-sm rounded-4xl w-full m-2 bg-white transition-all tran hover:bg-blue-700 hover:text-white text-blue-700 text-xs"> Deviens Pro NOW!</button>
              </div>
-
-             <div className=" absolute top-4 right-4  items-center justify-between flex-row gap-2 ">
-                 <div className="  flex flex-row w-full ">
-                         <Link href="/login" className="p-8 py-2 shadow-sm rounded-md w-full m-2 bg-blue-700 transition-all tran hover:bg-blue-600 text-white">Login</Link>
-                         <Link href="/register" className="flex  p-8 py-2 shadow-sm rounded-md w-full m-2 bg-white text-black">Login</Link>
-                 </div>
-             </div>
+-
         </div>
     </nav>
     )
