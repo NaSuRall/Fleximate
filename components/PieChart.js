@@ -18,9 +18,9 @@ const data = {
             label: 'Navigateurs',
             data: [60, 25, 15],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.6)',
-                'rgba(54, 162, 235, 0.6)',
-                'rgba(255, 206, 86, 0.6)',
+                '#38B6FF',
+                '#FF6384',
+                'rgba(151,255,99,0.6)',
             ],
             borderWidth: 1,
         },

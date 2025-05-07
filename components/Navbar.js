@@ -23,32 +23,32 @@ export default function Navbar(){
 
 
               <ul className="flex flex-col w-60 gap-3  text-zinc-400  rounded-lg">
-                      <li className="flex items-center gap-3 transition-all w-full  hover:bg-blue-700 p-4  hover:text-white rounded-md">
+                      <li className="flex items-center gap-3 transition-all w-full  hover:bg-blue-500 p-4  hover:text-white rounded-md">
                           <i className="fa-solid fa-users"></i>
                           <a href="#" className="w-full">Clients & Prospects</a>
                           <i className="fa-solid fa-angle-right "></i>
                       </li>
-                      <li className="flex items-center gap-3 transition-all  hover:bg-blue-700  hover:text-white p-4 rounded-md">
+                      <li className="flex items-center gap-3 transition-all  hover:bg-blue-500  hover:text-white p-4 rounded-md">
                           <i className="fa-solid fa-handshake"></i>
                           <a href="#" className="w-full">Opportunités & Transactions</a>
                           <i className="fa-solid fa-angle-right "></i>
                       </li>
-                      <li className="flex items-center gap-3 transition-all  hover:bg-blue-700 p-4  hover:text-white w-full  rounded-md">
+                      <li className="flex items-center gap-3 transition-all  hover:bg-blue-500 p-4  hover:text-white w-full  rounded-md">
                           <i className="fa-solid fa-chart-bar"></i>
                           <a href="#" className="w-full">Suivi & Reporting</a>
                           <i className="fa-solid fa-angle-right "></i>
                       </li>
-                      <li className="flex items-center gap-3 transition-all  hover:bg-blue-700 p-4 hover:text-white rounded-md">
+                      <li className="flex items-center gap-3 transition-all  hover:bg-blue-500 p-4 hover:text-white rounded-md">
                           <i className="fa-solid fa-diagram-project"></i>
                           <a href="#" className="w-full">Projets & Missions</a>
                           <i className="fa-solid fa-angle-right "></i>
                       </li>
-                      <li className="flex items-center gap-3 transition-all  hover:bg-blue-700 p-4 hover:text-white rounded-md">
+                      <li className="flex items-center gap-3 transition-all  hover:bg-blue-500 p-4 hover:text-white rounded-md">
                           <i className="fa-solid fa-file-lines"></i>
                           <a href="#" className="w-full">Documents & Automatisations</a>
                           <i className="fa-solid fa-angle-right "></i>
                       </li>
-                      <li className="flex items-center gap-3 transition-all  hover:bg-blue-700 p-4 hover:text-white rounded-md">
+                      <li className="flex items-center gap-3 transition-all  hover:bg-blue-500 p-4 hover:text-white rounded-md">
                           <i className="fa-solid fa-bell"></i>
                           <a href="#" className="w-full">Alertes & Communication</a>
                           <i className="fa-solid fa-angle-right "></i>
@@ -61,9 +61,9 @@ export default function Navbar(){
         {/* CARD Registration */}
         <div className="flex items-center justify-between flex-col w-full gap-5 p-3">
 
-            <div className="flex items-center text-center justify-center flex-col w-full bg-blue-700/80 p-6 rounded-3xl ">
+            <div className="flex items-center text-center justify-center flex-col w-full bg-blue-500/80 p-6 rounded-3xl ">
                  <p className="text-white">Passez a PRO pour accéder a toutes les fonctionnalités</p>
-                 <button className="p-8 py-2 shadow-sm rounded-4xl w-full m-2 bg-white transition-all tran hover:bg-blue-700 hover:text-white text-blue-700 text-xs"> Deviens Pro NOW!</button>
+                 <button className="p-8 py-2 shadow-sm rounded-4xl w-full m-2 bg-white transition-all tran hover:bg-blue-500 hover:text-white text-blue-700 text-xs"> Deviens Pro NOW!</button>
              </div>
 -
         </div>

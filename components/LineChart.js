@@ -20,8 +20,8 @@ const data = {
         {
             label: 'Visites',
             data: [50, 75, 150, 100],
-            borderColor: 'rgb(75, 192, 192)',
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: '#38B6FF',
+            backgroundColor: '#38B6FF',
             fill: true,
             tension: 0.4,
         },
