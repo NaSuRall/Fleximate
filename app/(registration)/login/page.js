@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function login(){
     return (
@@ -75,9 +76,8 @@ export default function login(){
                         </form>
 
 
-                        <p className="text-center text-sm text-blue-500 hover:underline">
-                            Don’t have an account?
-                        </p>
+
+                        <Link href="/register" className="text-center text-sm text-blue-500 hover:underline">Vous voulez crée un compte ?</Link>
                     </div>
                 </div>
 
