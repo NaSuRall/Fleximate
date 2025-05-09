@@ -1,19 +1,19 @@
-import js from "@eslint/js";
-import globals from "globals";
-import pluginReact from "eslint-plugin-react";
-import pluginTailwindCSS from "eslint-plugin-tailwindcss";
-import prettierPlugin from "eslint-plugin-prettier";
-import { parse } from "acorn";
-import { defineConfig } from "eslint/config";
-import pluginNext from "eslint-plugin-next";
+import js from '@eslint/js';
+import globals from 'globals';
+import pluginReact from 'eslint-plugin-react';
+import pluginTailwindCSS from 'eslint-plugin-tailwindcss';
+import prettierPlugin from 'eslint-plugin-prettier';
+import { parse } from 'acorn';
+import { defineConfig } from 'eslint/config';
+import pluginNext from 'eslint-plugin-next';
 
 export default defineConfig([
   {
-    files: ["**/*.{js,jsx,ts,tsx}"],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
       parserOptions: {
-        ecmaVersion: "latest",
-        sourceType: "module",
+        ecmaVersion: 'latest',
+        sourceType: 'module',
         ecmaFeatures: {
           jsx: true,
         },
@@ -23,19 +23,16 @@ export default defineConfig([
     plugins: {
       js,
       react: pluginReact,
-      next: pluginNext, // 👈 ajouté ici
+      next: pluginNext,
       tailwindcss: pluginTailwindCSS,
       prettier: prettierPlugin,
     },
-    extends: [
-      pluginReact.configs.recommended,
-      pluginNext.configs.recommended, // 👈 ajoute ça
-    ],
+    extends: [pluginReact.configs.recommended, pluginNext.configs.recommended],
     rules: {
       ...pluginReact.configs.recommended.rules,
-      "react/react-in-jsx-scope": "off", // Next.js n'en a pas besoin
-      "tailwindcss/classnames-order": "warn",
-      "prettier/prettier": "warn",
+      'react/react-in-jsx-scope': 'off',
+      'tailwindcss/classnames-order': 'warn',
+      'prettier/prettier': 'warn',
     },
   },
 ]);
