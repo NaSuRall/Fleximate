@@ -4,11 +4,11 @@ import Link from 'next/link';
 export default function steps2() {
   return (
     <div className="grid h-screen w-full grid-cols-4 grid-rows-1 gap-5 bg-blue-50 p-8">
-      <div className="rounded-4xl col-start-1 col-end-1 row-start-1 row-end-1 flex h-full w-full flex-col items-center bg-blue-500">
+      <div className="col-start-1 col-end-1 row-start-1 row-end-1 flex h-full w-full flex-col items-center rounded-4xl bg-blue-500">
         <div className="flex flex-col items-center justify-between">
           <div className="flex w-full flex-col gap-10 p-6">
             <Image
-              className="dark:invert"
+              className=""
               src="/logo.png"
               alt="Vercel logomark"
               width={200}
@@ -51,8 +51,8 @@ export default function steps2() {
         </div>
       </div>
 
-      <div className="rounded-4xl col-start-2 col-end-5 row-start-1 row-end-1 flex h-full w-full flex-col items-center justify-center gap-10">
-        <div className="rounded-4xl flex h-full w-full flex-col items-center justify-around bg-white px-4">
+      <div className="col-start-2 col-end-5 row-start-1 row-end-1 flex h-full w-full flex-col items-center justify-center gap-10 rounded-4xl">
+        <div className="flex h-full w-full flex-col items-center justify-around rounded-4xl bg-white px-4">
           <div className="w-1/3 space-y-6">
             <form className="space-y-6 p-6">
               <div className="text-center">
@@ -66,7 +66,7 @@ export default function steps2() {
                 <label className="mb-1 block text-sm font-medium text-gray-700">
                   Why will you use the service
                 </label>
-                <select className="w-full rounded-xl border border-gray-300 px-4 py-3 text-zinc-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select className="w-full rounded-xl border border-gray-300 px-4 py-3 text-zinc-400 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                   <option value="+33">work</option>
                   <option value="+1">Business</option>
                   <option value="+1">fun</option>
@@ -77,7 +77,7 @@ export default function steps2() {
                 <label className="mb-1 block text-sm font-medium text-gray-700">
                   What describes you best ?
                 </label>
-                <select className="w-full rounded-xl border border-gray-300 px-4 py-3 text-zinc-400 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <select className="w-full rounded-xl border border-gray-300 px-4 py-3 text-zinc-400 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none">
                   <option value="+33">Business Owner</option>
                   <option value="+1">---</option>
                   <option value="+1">---</option>
@@ -115,7 +115,6 @@ export default function steps2() {
               href="/login"
               className="text-center text-sm text-blue-500 hover:underline"
             >
-              {' '}
               Vous avez dejà un compte ?
             </Link>
             <div className="flex flex-row gap-10">
@@ -123,7 +122,7 @@ export default function steps2() {
                 href="/register"
                 className="cursor-pointer rounded-2xl bg-zinc-300 px-6 py-3 text-blue-500 transition-all hover:bg-zinc-400"
               >
-                <i className="fa-solid fa-arrow-left"></i> Next back{' '}
+                <i className="fa-solid fa-arrow-left"></i> Next back
               </Link>
               <Link
                 href="#"
