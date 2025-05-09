@@ -9,7 +9,7 @@ export default function register(){
             <div className=" rounded-4xl row-start-1  row-end-1 col-start-1 col-end-1 flex flex-col h-full w-full bg-blue-500  items-center    ">
                 <div className="flex items-center flex-col justify-between">
                     <div className=" flex flex-col w-full p-6 gap-10 ">
-                        <Image    className="dark:invert"
+                        <Image    className=""
                                   src="/logo.png"
                                   alt="Vercel logomark"
                                   width={300}

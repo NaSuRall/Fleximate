@@ -14,7 +14,7 @@ export default function login(){
                 </div>
 
                 <div className="flex flex-col items-center justify-center ">
-                    <Image    className="dark:invert"
+                    <Image    className=""
                               src="/loginImg.svg"
                               alt="Vercel logomark"
                               width={600}
