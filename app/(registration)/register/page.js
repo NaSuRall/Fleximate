@@ -12,8 +12,8 @@ export default function register(){
                         <Image    className="dark:invert"
                                   src="/logo.png"
                                   alt="Vercel logomark"
-                                  width={200}
-                                  height={200}
+                                  width={300}
+                                  height={300}
                         />
                         <h1 className="text-5xl  text-white font-bold">Get started</h1>
                     </div>
@@ -87,7 +87,7 @@ export default function register(){
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-2">Code from SMS</label>
                                 <div className="flex gap-3">
-                                    {Array(4)
+                                    {Array(6)
                                         .fill(0)
                                         .map((_, idx) => (
                                             <input
@@ -135,14 +135,12 @@ export default function register(){
                             </div>
                         </form>
 
-
-
                     </div>
                     <footer className="flex items-center justify-between w-full text-sm text-blue-500 border-t-2 border-zinc-300 p-5">
                         <Link href="/login"  className="text-center text-sm text-blue-500 hover:underline"> Vous avez dejà un compte ?</Link>
 
-                        <button className="px-6 py-3 bg-blue-500 text-white rounded-2xl cursor-pointer transition-all hover:bg-blue-600 ">Next step <i
-                            className="fa-solid fa-arrow-right"></i></button>
+                        <Link href="/steps2" className="px-6 py-3 bg-blue-500 text-white rounded-2xl cursor-pointer transition-all hover:bg-blue-600 ">Next step <i
+                            className="fa-solid fa-arrow-right"></i></Link>
                     </footer>
 
                 </div>

@@ -74,7 +74,7 @@ export default function Dashboard() {
 
                     <div className="bg-white rounded-4xl p-6 row-start-2 row-end-4 col-start-1 col-end-2">
                         <div className="flex flex-row justify-between">
-                            <h2 className="text-xl">Visite website</h2>
+                            <h2 className="text-xl font-bold">Visite website</h2>
                             <a href="#"><i className="fa-solid fa-arrow-up-right-from-square text-xl transition-all text-blue-500 cursor-pointer hover:translate-x-0.5 hover:-translate-y-px"></i></a>
                         </div>
                         <LineChart />
@@ -82,7 +82,7 @@ export default function Dashboard() {
 
                     <div className="bg-white rounded-4xl p-6 row-start-2 row-end-4 col-start-2 col-end-3">
                         <div className="flex flex-row justify-between">
-                            <h2 className="text-xl">Client</h2>
+                            <h2 className="text-xl font-bold">Client</h2>
                             <a href="#"><i className="fa-solid fa-arrow-up-right-from-square text-xl transition-all text-blue-500 cursor-pointer hover:translate-x-0.5 hover:-translate-y-px"></i></a>
                         </div>
                         <div className="flex flex-row w-full h-64">
@@ -95,7 +95,7 @@ export default function Dashboard() {
                     <div className="bg-white rounded-4xl p-6 row-start-4 row-end-6 col-start-1 col-end-3">
                         <div className="flex flex-row items-center justify-between mb-3">
                             <div className="flex flex-row w-full h-full">
-                                <h2 className="text-xl">Tableau de board - Project</h2>
+                                <h2 className="text-xl font-bold">Tableau de board - Project</h2>
                             </div>
                             <div className="p-2 flex gap-10">
                                 <input
